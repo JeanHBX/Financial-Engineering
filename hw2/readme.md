@@ -6,8 +6,10 @@
 
 這次作業我先依據approximate的YTM公式求之
 https://bit.ly/2Jtmu9L （圖一）
+
 有Bond price,有YTM, 然後參考了綠角財經筆記那篇文的概念來計算spot rate
 https://bit.ly/2UuMg3S （圖二）
+
 最後再依據spot rate計算forward rate
 https://bit.ly/3ayfy7i （圖三）
 
