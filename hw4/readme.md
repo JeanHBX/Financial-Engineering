@@ -40,3 +40,18 @@ d2 = d1 - sigma*((maturity_yr/12)**(1/2))
 
 之後再用BSM和put call parity公式，計算put value和call value
 https://wikimedia.org/api/rest_v1/media/math/render/svg/d1f576effba2c7cabdebb78ac63fbb75b850a714
+
+
+比較有問題是在操作stats.norm.cdf 的時候
+
+
+按道理normal distribution應該是直接用上面那個function來算cdf（參考老師week 7 slide pg 30）
+
+
+但我計算的時候卻沒辦法得到test value的答案（參考老師week 7 slide pg 40），於是嘗試了其他如pdf等後，靈機一動試試 (1-stats.norm.cdf)
+結果N(-d1), N(-d2)值就剛好和test value上面一樣了？
+我猜是因為 1- N(d1) = N(-d1) = stats.norm.cdf 的關係
+
+（我真的很弱  連stats套件都查了半天才勉強能用
+
+大概就是這樣，請多見諒，謝謝
