@@ -1,4 +1,4 @@
-作業四：
+作業四： \n
  根據Black-Scholes Model來計算EU put 和call option的value.
  這份作業比較前幾份作業直觀，就是一步一步來
 先算出option的dividend本利和以及其折現
