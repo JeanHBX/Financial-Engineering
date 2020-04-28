@@ -7,6 +7,8 @@
 
 先算出option的dividend本利和以及其折現
 要派幾次利息，很無腦地用if elif來寫：
+
+
 一次就1個月；
 
 
@@ -28,10 +30,13 @@ dividend = pay_div_amt*e**(risk_free_rate*(-1/12)) + pay_div_amt*e**(risk_free_r
 
 
 公式：
+
+
 d1 = (np.log(estimated_stock_price/exercise_price) + (risk_free_rate + 0.5*sigma**2)*(maturity_yr/12))/(sigma*((maturity_yr/12)**(1/2)))
 
 
 d2 = d1 - sigma*((maturity_yr/12)**(1/2))
+
 
 之後再用BSM和put call parity公式，計算put value和call value
 https://wikimedia.org/api/rest_v1/media/math/render/svg/d1f576effba2c7cabdebb78ac63fbb75b850a714
