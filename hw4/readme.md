@@ -8,9 +8,17 @@
 先算出option的dividend本利和以及其折現
 要派幾次利息，很無腦地用if elif來寫：
 一次就1個月；
+
+
 兩次就1個月和4個月；
+
+
 三次就1個月，4個月，7個月；
+
+
 四次就1個月，4個月，7個月和10個月；
+
+
 dividend = pay_div_amt*e**(risk_free_rate*(-1/12)) + pay_div_amt*e**(risk_free_rate*(-4/12)) + pay_div_amt*e**(risk_free_rate*(-7/12)) + pay_div_amt*e**(risk_free_rate*(-10/12))
 
 
